@@ -2,8 +2,13 @@
 <html>
 <head>
 	<title>manada</title>
+	<!--icon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<!--icon-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -25,7 +30,7 @@
 <nav class="menu">
 	<img class="logo" src="media/mnd-logo-w.svg">
 	<ul>
-		<li><a href="home.html">Home</a></li>
+		<li><a href="index.html">Home</a></li>
 		<li><a href="galeria.html">Galería</a></li>
 		<li><a href="nosotros.html">Nosotros</a></li>
 		<li><a href="productos.html">Productos</a></li>
@@ -40,7 +45,19 @@
 
 <!--CarouselPrincipal-->
 <div class="carouselPrincipal">
-	<img src="media/esports-carousel1.jpg">
+	<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+	  	<div class="carousel-inner">
+	    	<div class="carousel-item active">
+	      		<img src="media/esports-carousel1.jpg" class="d-block w-100">
+	    	</div>
+	    	<div class="carousel-item">
+	      		<img src="media/galeria1.jpg" class="d-block w-100">
+	    	</div>
+	    	<div class="carousel-item">
+	      	<img src="media/galeria2.jpg" class="d-block w-100">
+	   	 </div>
+  		</div>
+	</div>
 	<h1>Bienvenido
 		<br>a la
 	</h1>
@@ -78,140 +95,133 @@
 		Miranos!
 	</h1>
 	<h2 class="matches--title">Partidos en <span>vivo</span></h2>
-	<div class="liveMatch">
-		<div class="infoMatch">
-			<p class="date-game">21/05/2021 - <span>Fortnite</span></p>
-			<p class="cup">FNCS: Capitulo 2 - Temporada 6</p>
+	<div class="partidosEnVivo">
+		<div class="liveMatch">
+			<div class="infoMatch">
+				<p class="date-game">21/05/2021 - <span>Fortnite</span></p>
+				<p class="cup">FNCS: Capitulo 2 - Temporada 6</p>
+			</div>
+			<div class="matchContent">
+				<div class="matchTime">
+					<h2>10:15<span>am</span></h2>
+				</div>
+				<div class="vsMatch">
+					<img src="media/logo-icon-b.svg">
+					<span>vs</span>
+					<img src="media/vsteam-logo.svg">
+				</div>
+				<div class="btn-watch">
+					<a href="">VER</a>
+				</div>
+			</div>
 		</div>
-		<div class="matchContent">
-			<div class="matchTime">
-				<h2>10:15<span>am</span></h2>
+		<br>
+		<div class="liveMatch">
+			<div class="infoMatch">
+				<p class="date-game">21/05/2021 - <span>Valorant</span></p>
+				<p class="cup">Masters: Capitulo 3 - Acto 3</p>
 			</div>
-			<div class="vsMatch">
-				<img src="media/logo-icon-b.svg">
-				<span>vs</span>
-				<img src="media/vsteam-logo.svg">
-			</div>
-			<div class="btn-watch">
-				<a href="">VER</a>
+			<div class="matchContent">
+				<div class="matchTime">
+					<h2>10:30<span>am</span></h2>
+				</div>
+				<div class="vsMatch">
+					<img src="media/logo-icon-b.svg">
+					<span>vs</span>
+					<img src="media/vsteam-logo.svg">
+				</div>
+				<div class="btn-watch">
+					<a href="">VER</a>
+				</div>
 			</div>
 		</div>
 	</div>
-	<br>
-	<div class="liveMatch">
-		<div class="infoMatch">
-			<p class="date-game">21/05/2021 - <span>Valorant</span></p>
-			<p class="cup">Masters: Capitulo 3 - Acto 3</p>
+	<div class="partidos">
+		<div class="proximosPartidos">
+				<h2 class="matches--title"><span>Próximos </span>partidos</h2>
+				<div class="nextMatches">
+					<div class="infoMatch">
+						<p class="date-game">24/05/2021 - <span>Valorant</span></p>
+						<p class="cup">Challengers: Capitulo 3 - Acto 3</p>
+					</div>
+					<div class="matchContent">
+						<div class="matchTime">
+							<h2>06:45<span>pm</span></h2>
+						</div>
+						<div class="vsMatch">
+							<img src="media/logo-icon-b.svg">
+							<span>vs</span>
+							<img src="media/vsteam-logo.svg">
+						</div>
+						<div class="btn-watch">
+							<a href="">VER</a>
+						</div>
+					</div>
+				</div>
+				<div class="nextMatches">
+					<div class="infoMatch">
+						<p class="date-game">26/05/2021 - <span>CS:GO</span></p>
+						<p class="cup">ESL Pro Tour</p>
+					</div>
+					<div class="matchContent">
+						<div class="matchTime">
+							<h2>12:15<span>pm</span></h2>
+						</div>
+						<div class="vsMatch">
+							<img src="media/logo-icon-b.svg">
+							<span>vs</span>
+							<img src="media/vsteam-logo.svg">
+						</div>
+						<div class="btn-watch">
+							<a href="">VER</a>
+						</div>
+					</div>
+				</div>
 		</div>
-		<div class="matchContent">
-			<div class="matchTime">
-				<h2>10:30<span>am</span></h2>
+		<div class="partidosPasados">
+			<h2 class="matches--title prevMatches-title"><span>Resultados</span></h2>
+			<div class="results">
+				<div class="infoMatch">
+					<p class="date-game">20/05/2021 - <span>CS:GO</span></p>
+					<p class="cup">BLAST Premiere</p>
+				</div>
+				<div class="matchContent">
+					<div class="matchTime">
+						<h2>09:30<span>am</span></h2>
+					</div>
+					<div class="vsMatch">
+						<img src="media/logo-icon-b.svg">
+						<span>vs</span>
+						<img src="media/vsteam-logo.svg">
+					</div>
+					<div class="btn-watch">
+						<a href="">VER</a>
+					</div>
+				</div>
 			</div>
-			<div class="vsMatch">
-				<img src="media/logo-icon-b.svg">
-				<span>vs</span>
-				<img src="media/vsteam-logo.svg">
+			<div class="results">
+					<div class="infoMatch">
+						<p class="date-game">20/05/2021 - <span>CS:GO</span></p>
+						<p class="cup">BLAST Premiere</p>
+					</div>
+					<div class="matchContent">
+						<div class="matchTime">
+							<h2>09:30<span>am</span></h2>
+						</div>
+						<div class="vsMatch">
+							<img src="media/logo-icon-b.svg">
+							<span>vs</span>
+							<img src="media/vsteam-logo.svg">
+						</div>
+						<div class="btn-watch">
+							<a href="">VER</a>
+						</div>
+					</div>
 			</div>
-			<div class="btn-watch">
-				<a href="">VER</a>
-			</div>
-		</div>
+		</div>	
 	</div>
-	<div class="container--title">
-		<h2 class="matches--title"><span>Próximos </span>partidos</h2>
-		<h2 class="matches--title prevMatches-title"><span>Resultados</span></h2>
-	</div>
-	<div class="matches">
-
-		<!--Proximo partido-->
-		<div class="nextMatches">
-			<div class="infoMatch">
-				<p class="date-game">24/05/2021 - <span>Valorant</span></p>
-				<p class="cup">Challengers: Capitulo 3 - Acto 3</p>
-			</div>
-			<div class="matchContent">
-				<div class="matchTime">
-					<h2>06:45<span>pm</span></h2>
-				</div>
-				<div class="vsMatch">
-					<img src="media/logo-icon-b.svg">
-					<span>vs</span>
-					<img src="media/vsteam-logo.svg">
-				</div>
-				<div class="btn-watch">
-					<a href="">VER</a>
-				</div>
-			</div>
-		</div>
-		<!--Proximo partido-->
-
-		<!--Partido pasado-->
-		<div class="results">
-			<div class="infoMatch">
-				<p class="date-game">20/05/2021 - <span>CS:GO</span></p>
-				<p class="cup">BLAST Premiere</p>
-			</div>
-			<div class="matchContent">
-				<div class="matchTime">
-					<h2>09:30<span>am</span></h2>
-				</div>
-				<div class="vsMatch">
-					<img src="media/logo-icon-b.svg">
-					<span>vs</span>
-					<img src="media/vsteam-logo.svg">
-				</div>
-				<div class="btn-watch">
-					<a href="">VER</a>
-				</div>
-			</div>
-		</div>
-		<!--Partido pasado-->
-
-		<!--Proximo partido-->
-		<div class="nextMatches">
-			<div class="infoMatch">
-				<p class="date-game">26/05/2021 - <span>CS:GO</span></p>
-				<p class="cup">ESL Pro Tour</p>
-			</div>
-			<div class="matchContent">
-				<div class="matchTime">
-					<h2>12:15<span>pm</span></h2>
-				</div>
-				<div class="vsMatch">
-					<img src="media/logo-icon-b.svg">
-					<span>vs</span>
-					<img src="media/vsteam-logo.svg">
-				</div>
-				<div class="btn-watch">
-					<a href="">VER</a>
-				</div>
-			</div>
-		</div>
-		<!--Proximo partido-->
-
-		<!--Partido pasado-->
-		<div class="results">
-			<div class="infoMatch">
-				<p class="date-game">21/05/2021 - <span>CS:GO</span></p>
-				<p class="cup">BLAST Premiere</p>
-			</div>
-			<div class="matchContent">
-				<div class="matchTime">
-					<h2>09:30<span>am</span></h2>
-				</div>
-				<div class="vsMatch">
-					<img src="media/logo-icon-b.svg">
-					<span>vs</span>
-					<img src="media/vsteam-logo.svg">
-				</div>
-				<div class="btn-watch">
-					<a href="">VER</a>
-				</div>
-			</div>
-		</div>
-		<!--Partido pasado-->
-
-	</div>	
 </div>
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </html>
