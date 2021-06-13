@@ -1,0 +1,658 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Poppins", sans-serif !important; }
+
+h1 {
+  font-weight: 600; }
+
+p {
+  margin-bottom: 0; }
+
+.top-menu {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  flex-direction: row; }
+
+.top-menu .social-media {
+  height: 20px;
+  display: flex; }
+
+.top-menu .social-media p {
+  font-size: 14px; }
+
+.top-menu .social-media p img {
+  width: 11px;
+  height: 11px; }
+
+.top-menu .social-media a img {
+  width: 20px;
+  height: 20px; }
+
+.top-menu .social-media .yt {
+  margin-right: 10px;
+  color: #FF0000; }
+
+.top-menu .social-media .ig {
+  margin-left: 10px; }
+
+.menu {
+  height: 60px;
+  background-color: #333;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.menu .logo {
+  width: 95px;
+  height: auto;
+  position: relative;
+  left: 20px; }
+
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center; }
+
+.menu ul li {
+  padding: 17.2px;
+  display: block; }
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400; }
+
+.menu ul li:hover {
+  background-color: #00CFB4; }
+
+.menu .search-box {
+  display: flex;
+  position: relative;
+  right: 20px;
+  height: 25px;
+  align-items: center; }
+
+.menu .search-box .buscador {
+  position: relative;
+  height: 25px;
+  border: none;
+  text-indent: 5px;
+  border-radius: 3px; }
+
+.menu .search-box .buscador:focus-visible {
+  outline: none; }
+
+.menu .search-icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin-left: 10px; }
+
+.carouselPrincipal {
+  width: 100%;
+  max-height: 600px;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+
+.carouselPrincipal .carousel .carousel-inner .carousel-item img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+  position: relative;
+  bottom: 200px; }
+
+.carouselPrincipal h1 {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  font-size: 30px;
+  top: 80px; }
+
+.carouselPrincipal .logo-banner {
+  position: absolute;
+  max-width: 300px;
+  min-width: 160px;
+  top: 140px;
+  animation: heartBeat;
+  animation-duration: 12s;
+  --animate-repeat: 2; }
+
+.containerAnnounces {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  top: 80px;
+  background-color: #eee;
+  min-height: 460px;
+  gap: 10px; }
+
+.sectionTitle {
+  width: 100%;
+  text-align: center;
+  height: 60px;
+  position: relative;
+  top: 20px;
+  font-size: 35px; }
+
+.containerAnnounces .announce {
+  width: 300px;
+  height: 300px; }
+
+.containerAnnounces .announce img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.containerAnnounces .announce img:hover {
+  transform: scale(1.02, 1.02);
+  opacity: 0.5; }
+
+.containerAnnounces .announce h2 {
+  text-align: center;
+  font-size: 15px;
+  position: relative;
+  bottom: 170px;
+  display: none; }
+
+.containerAnnounces .announce:hover > h2 {
+  display: block; }
+
+.containerMatches {
+  position: relative;
+  top: 80px;
+  height: 80vh; }
+
+.matches--title {
+  position: relative;
+  top: 40px;
+  font-weight: 400;
+  text-align: center; }
+
+.matches--title span {
+  color: #00CFB4; }
+
+.containerMatches .partidosEnVivo {
+  display: flex;
+  flex-wrap: wrap; }
+
+.containerMatches .partidosEnVivo .liveMatch {
+  width: 80%;
+  height: 100px;
+  display: flex;
+  background-color: #808080;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  border: 6px solid rgba(228, 228, 228, 0.9);
+  margin-bottom: 15px; }
+
+.containerMatches .partidosEnVivo .liveMatch .infoMatch {
+  display: flex;
+  width: 100%;
+  height: 25px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+  background-color: #eee;
+  align-items: center; }
+
+.containerMatches .partidosEnVivo .liveMatch .infoMatch .date-game {
+  margin-left: 15px; }
+
+.containerMatches .partidosEnVivo .liveMatch .infoMatch .date-game span {
+  color: #00CFB4; }
+
+.containerMatches .partidosEnVivo .infoMatch .cup {
+  margin-right: 15px; }
+
+.containerMatches .partidosEnVivo .liveMatch .matchContent {
+  width: 100%;
+  height: 87px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px; }
+
+.containerMatches .partidosEnVivo .liveMatch .matchContent .matchTime {
+  margin-left: 15px;
+  display: flex;
+  align-items: center; }
+
+.containerMatches .partidosEnVivo .liveMatch .matchContent .matchTime span {
+  font-size: 15px; }
+
+.containerMatches .partidosEnVivo .liveMatch .matchContent .vsMatch {
+  display: flex;
+  margin-right: 100px; }
+
+.containerMatches .partidosEnVivo .liveMatch .matchContent .vsMatch img {
+  width: 55px; }
+
+.containerMatches .partidosEnVivo .liveMatch .matchContent .vsMatch span {
+  align-items: center;
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.containerMatches .partidosEnVivo .liveMatch .matchContent .btn-watch {
+  position: relative;
+  display: flex;
+  align-items: center; }
+
+.containerMatches .partidosEnVivo .liveMatch .matchContent .btn-watch a {
+  padding: 15px 40px;
+  color: #fff;
+  text-decoration: none;
+  background-color: red;
+  border-radius: 4px;
+  position: absolute;
+  right: 15px; }
+
+.containerMatches .partidos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  top: 35px; }
+
+.containerMatches .partidos .proximosPartidos {
+  width: 45%; }
+
+.containerMatches .partidos .proximosPartidos .nextMatches {
+  width: 80%;
+  margin: 0 auto;
+  height: 100px;
+  background-color: #808080;
+  border: 6px solid rgba(228, 228, 228, 0.9);
+  top: 50px;
+  position: relative;
+  display: flex;
+  margin-bottom: 15px; }
+
+.containerMatches .partidos .proximosPartidos .nextMatches .infoMatch {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  align-items: center; }
+
+.containerMatches .partidos .proximosPartidos .nextMatches .infoMatch .date-game {
+  margin-left: 15px; }
+
+.containerMatches .partidos .proximosPartidos .nextMatches .infoMatch .date-game span {
+  color: #00CFB4; }
+
+.containerMatches .partidos .proximosPartidos .nextMatches .infoMatch .cup {
+  margin-right: 15px; }
+
+@media screen and (max-width: 1210px) {
+  .containerMatches .partidos .proximosPartidos .nextMatches .infoMatch .cup {
+    display: none; } }
+
+.containerMatches .partidos .proximosPartidos .nextMatches .matchContent {
+  width: 100%;
+  height: 87px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px; }
+
+.containerMatches .partidos .proximosPartidos .nextMatches .matchContent .matchTime {
+  margin-left: 15px;
+  display: flex;
+  align-items: center; }
+
+.containerMatches .partidos .proximosPartidos .nextMatches .matchContent .matchTime span {
+  font-size: 15px; }
+
+.containerMatches .partidos .proximosPartidos .nextMatches .matchContent .vsMatch {
+  display: flex;
+  margin-left: 15px; }
+
+.containerMatches .partidos .proximosPartidos .nextMatches .matchContent .vsMatch img {
+  width: 55px; }
+
+.containerMatches .partidos .proximosPartidos .nextMatches .matchContent .vsMatch span {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.containerMatches .partidos .proximosPartidos .nextMatches .matchContent .btn-watch {
+  position: relative;
+  display: flex;
+  align-items: center; }
+
+.containerMatches .partidos .proximosPartidos .nextMatches .matchContent .btn-watch a {
+  padding: 15px 40px;
+  color: #fff;
+  text-decoration: none;
+  background-color: red;
+  border-radius: 4px;
+  right: 15px;
+  position: relative; }
+
+.containerMatches .partidos .partidosPasados {
+  width: 45%; }
+
+.containerMatches .partidos .partidosPasados .results {
+  width: 80%;
+  margin: 0 auto;
+  height: 100px;
+  background-color: #808080;
+  border: 6px solid rgba(228, 228, 228, 0.9);
+  top: 50px;
+  position: relative;
+  display: flex;
+  margin-bottom: 15px; }
+
+.containerMatches .partidos .partidosPasados .results .infoMatch {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  align-items: center; }
+
+.containerMatches .partidos .partidosPasados .results .infoMatch .date-game {
+  margin-left: 15px; }
+
+.containerMatches .partidos .partidosPasados .results .infoMatch .date-game span {
+  color: #00CFB4; }
+
+.containerMatches .partidos .partidosPasados .results .infoMatch .cup {
+  margin-right: 15px; }
+
+@media screen and (max-width: 1210px) {
+  .containerMatches .partidos .partidosPasados .results .infoMatch .cup {
+    display: none; } }
+
+.containerMatches .partidos .partidosPasados .results .matchContent {
+  width: 100%;
+  height: 87px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px; }
+
+.containerMatches .partidos .partidosPasados .results .matchContent .matchTime {
+  margin-left: 15px;
+  display: flex;
+  align-items: center; }
+
+.containerMatches .partidos .partidosPasados .results .matchContent .matchTime span {
+  font-size: 15px; }
+
+.containerMatches .partidos .partidosPasados .results .matchContent .vsMatch {
+  display: flex;
+  margin-left: 15px; }
+
+.containerMatches .partidos .partidosPasados .results .matchContent .vsMatch img {
+  width: 55px; }
+
+.containerMatches .partidos .partidosPasados .results .matchContent .vsMatch span {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.containerMatches .partidos .partidosPasados .results .matchContent .btn-watch {
+  position: relative;
+  display: flex;
+  align-items: center; }
+
+.containerMatches .partidos .partidosPasados .results .matchContent .btn-watch a {
+  padding: 15px 40px;
+  color: #fff;
+  text-decoration: none;
+  background-color: red;
+  border-radius: 4px;
+  right: 15px;
+  position: relative; }
+
+.containerImagenes {
+  display: grid;
+  grid-template-columns: 14% 14% 14% 14%;
+  justify-content: center;
+  top: 40px;
+  position: relative;
+  grid-row-gap: 15px; }
+
+.containerImagenes .image {
+  width: 250px;
+  height: 250px; }
+
+.containerImagenes .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+@media screen and (max-width: 767px) {
+  .containerImagenes {
+    grid-template-columns: 80%;
+    grid-gap: 20px; }
+  .containerImagenes .image {
+    width: 300px;
+    height: 300px; } }
+
+.carouselNosotros {
+  width: 100%;
+  max-height: 600px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 20px; }
+
+.carouselNosotros img {
+  max-width: 60%;
+  height: auto;
+  object-fit: cover; }
+
+.carouselNosotros h1 {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  font-size: 30px;
+  top: 230px; }
+
+.carouselNosotros .logo-banner {
+  position: absolute;
+  max-width: 300px;
+  min-width: 160px;
+  top: 265px;
+  animation: heartBeat;
+  animation-duration: 12s;
+  --animate-repeat: 2; }
+
+.history {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  top: 60px;
+  background-color: #eee;
+  padding: 20px; }
+
+.history h1 {
+  text-align: center; }
+
+.history h1 span {
+  color: #00CFB4; }
+
+.history p {
+  padding: 10px 30px;
+  width: 70%;
+  margin: 0 auto; }
+
+.seccionIndumentaria {
+  background-color: #fff;
+  height: 55vh;
+  position: relative;
+  top: 65px; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .seccionIndumentaria {
+      height: 90vh; } }
+  .seccionIndumentaria .indumentaria {
+    color: #00CFB4;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    top: 45px; }
+  .seccionIndumentaria .containerIndumentaria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 55px; }
+    .seccionIndumentaria .containerIndumentaria .image {
+      width: 220px;
+      height: 330px;
+      padding: 10px; }
+      .seccionIndumentaria .containerIndumentaria .image img {
+        width: 100%; }
+      .seccionIndumentaria .containerIndumentaria .image a img:hover {
+        transform: scale(1.02, 1.02); }
+
+.seccionAccesorios {
+  background-color: #eee;
+  height: 55vh;
+  position: relative;
+  top: 65px; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .seccionAccesorios {
+      height: 90vh; } }
+  .seccionAccesorios .accesorios {
+    color: #00CFB4;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    top: 30px; }
+  .seccionAccesorios .containerAccesorios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 40px; }
+    .seccionAccesorios .containerAccesorios .image {
+      width: 220px;
+      height: 330px;
+      padding: 10px; }
+      .seccionAccesorios .containerAccesorios .image img {
+        width: 100%; }
+      .seccionAccesorios .containerAccesorios .image a img:hover {
+        transform: scale(1.02, 1.02); }
+
+.seccionHardware {
+  background-color: #fff;
+  height: 49vh;
+  position: relative;
+  top: 65px; }
+  .seccionHardware .hardware {
+    color: #00CFB4;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    top: 30px; }
+  .seccionHardware .containerHardware {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 40px; }
+    .seccionHardware .containerHardware .image {
+      width: 220px;
+      height: 330px;
+      padding: 10px; }
+      .seccionHardware .containerHardware .image img {
+        width: 100%; }
+      .seccionHardware .containerHardware .image a img:hover {
+        transform: scale(1.02, 1.02); }
+
+.form body {
+  background: #59ABE3;
+  margin: 0; }
+
+.form {
+  width: 590px;
+  height: 430px;
+  background: #eee;
+  border-radius: 8px;
+  box-shadow: 0 0 20px -10px #000;
+  margin: calc(35vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  position: relative; }
+
+.form h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c; }
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: 'Montserrat',sans-serif;
+  transition: all .3s;
+  border-bottom: 2px solid #bebed2; }
+
+.form input:focus {
+  border-bottom: 2px solid #78788c; }
+
+.form p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a; }
+
+.form button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all .3s; }
+
+.form button:hover {
+  background: #78788c;
+  color: #fff; }
+
+.form div {
+  content: 'Hi';
+  position: absolute;
+  bottom: -15px;
+  right: 130px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000; }
+
+.form span {
+  margin: 0 5px 0 15px; }
